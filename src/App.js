@@ -5,6 +5,9 @@ import {getOpeningTimes, singleTimeRangeOpeningToDisplayFormat, getCurrentDayOfT
 import styled from 'styled-components';
 import { ReactComponent as Clock } from './clock.svg';
 
+const redColor = 'rgba(200, 10, 10, 1)';
+const greyColor = 'rgba(32, 33, 37, 0.42)';
+
 const OpeningTimesHeader = styled.h1`
   text-align: left;
   font-size: 24px;
@@ -16,14 +19,14 @@ const OpeningTimesHeader = styled.h1`
   & > svg {
     width: 16px;
     height: 16px;
-    fill: rgba(32, 33, 37, 0.42);
+    fill: ${greyColor};
     padding: 0 10px 0 3px;
   }
 `
 
 const TimesWrapper = styled.div`
   width: 360px;
-  border-color: rgba(32, 33, 37, 0.42);
+  border-color: ${greyColor};
   border-width: 1px;
   border-style: solid;
   padding: 20px 32px 32px;
@@ -44,7 +47,7 @@ const TimeRow = styled.div`
 
 const ClosedTime = styled.span`
   font-weight: 400;
-  color: rgba(32, 33, 37, 0.42)
+  color: ${greyColor}
 `
 
 const DayLabel = styled.span`
@@ -74,7 +77,7 @@ const TimesInputWrapper = styled.div`
 const ErrorInfo = styled.span`
   font-weight: bold;
   font-size: 16p;
-  color: red;
+  color: ${redColor};
   ${({ show }) => !show && `
     visibility: hidden;
   `}
@@ -85,7 +88,7 @@ const TimesInput = styled.textarea`
   width: 100%;
   height: 360px;
   ${({ isCorrect }) => !isCorrect && `
-    border: 2px solid red;
+    border: 2px solid ${redColor};
   `}
 `
 
