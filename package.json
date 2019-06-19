@@ -13,7 +13,7 @@
   },
   "scripts": {
     "predeploy": "yarn build",
-    "deploy": "gh-pages -b pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +34,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://pafciu17.github.io/opening"
+  "homepage": "https://pafciu17.github.io/opening-times"
 }
