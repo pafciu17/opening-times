@@ -14,7 +14,7 @@ const OpeningTimesHeader = styled.h1`
   line-height: 30px;
   color: #202125;
   margin: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 1px solid #000000;
   padding-bottom: 15px;
   & > svg {
     width: 16px;
